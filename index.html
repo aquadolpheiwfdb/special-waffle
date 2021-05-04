@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <center>
+        <h1>MY Family Book</h1>
+<h1 id="h0ne">Ely</h1>
+<img id="photo" src="brother.jpg">
+<br>
+<br>
+<button onclick="nextslide()">
+next
+</button>
+
+<script>
+    var arrayimage =["brother.jpg","mom.jpg","dad.jpg","sister.jpg"];
+    console.log(arrayimage);
+    
+    var arrayname=["Ely", "Mama", "Papa", "Ley"]
+
+    var i=0;
+    function nextslide(){
+        document.getElementById("photo").src=arrayimage[i];
+        document.getElementById("h0ne").innerHTML=arrayname[i];
+        i++;
+        if(i==4){i=0};
+    }
+        </script>
+        <style>
+
+        </style>
+        </center>
+    </body>
+</html>
